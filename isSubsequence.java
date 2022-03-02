@@ -1,4 +1,5 @@
 //leetcode.com/problems/is-subsequence/
+//two approaches are being discussed here
 //1.Topdown
 class Solution {
     int[][] dp;
@@ -36,7 +37,7 @@ class Solution {
         return dp[m][n]=Math.max(LCS(s,t,m,n-1),LCS(s,t,m-1,n));
     }
 }
-
+//***************************************************************************************************************************************************************************
 //2.efficient approach O(n)
 class Solution {
     public boolean isSubsequence(String s, String t) {
